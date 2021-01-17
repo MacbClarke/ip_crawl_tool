@@ -1,2 +1,4 @@
-version = 'v4.0'#版本号
+version = 'v4.01'#版本号
 
+netch_ext = '.txt'
+sstap_ext = '.rules'

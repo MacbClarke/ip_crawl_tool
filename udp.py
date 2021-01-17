@@ -69,7 +69,7 @@ def udp_crawl(exe_list):
                                 exe = exe
                                 break
                         if is_internal_ip(log_list[5]) != True and log_list[5].split('.')[0] !='127':
-                            f_conf = open('config.txt','r')
+                            f_conf = open('cache.txt','r')
                             ip_list = f_conf.read()
                             if log_list[5] not in ip_list:
                                 ip_list_udp.append(log_list[5])

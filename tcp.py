@@ -31,7 +31,7 @@ def tcp_crawl(exe_list):
                     #print('远程地址：'+str(raddr))
                     if raddr.ip != '127.0.0.1' and ':' not in raddr.ip:#判断是否为本机地址以及剔除ipv6
                         if is_internal_ip(raddr.ip) != True:#判断是否为内网ip
-                            f_conf = open('config.txt','r')
+                            f_conf = open('cache.txt','r')
                             ip_list = f_conf.read()
                             if raddr.ip not in ip_list:
                                 ip_temp.append(raddr.ip)
